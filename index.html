@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!--Link to FontAwesome for social media icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"/>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <style>
@@ -33,6 +35,12 @@
         }
         .section{
             padding-top: 4vw;
+        }
+        .tabs .indicator{
+            background-color:navy;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active{
+            background: ghostwhite;
         }
     </style>
 </head>
@@ -96,7 +104,121 @@
         </div>
     </section>
 
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/gym.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
 
+    <section class="container section" id="services">
+        <div class="row">
+            <div class="col s12 l4">
+                <h2 class="indigo-text text-darken-4">What I do...</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed. Et malesuada fames ac turpis egestas. Interdum velit laoreet id donec ultrices. Augue interdum velit euismod in pellentesque massa. </p>
+            </div>
+            <div class="col s12 l6 offset-l2">
+                <ul class="tabs">
+                    <li class="tab col s6">
+                        <a href="#MealPlanning" class="indigo-text text-darken-4">Meal planning</a>
+                    </li>
+                    <li class="tab col s6">
+                        <a href="#CalorieCounting" class="indigo-text text-darken-4">Calorie Counting</a>
+                    </li>
+                </ul>
+                <div class="col s12" id="MealPlanning">
+                    <p class="flow-text indigo-text text-darken-4">Meal Planning</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed. Et malesuada fames ac turpis egestas. Interdum velit laoreet id donec ultrices. Augue interdum velit euismod in pellentesque massa.</p>
+                </div>
+                <div class="col s12" id="CalorieCounting">
+                    <p class="flow-text indigo-text text-darken-4">Calorie Counting</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed. Et malesuada fames ac turpis egestas. Interdum velit laoreet id donec ultrices. Augue interdum velit euismod in pellentesque massa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section container"id="contact">
+        <div class="row">
+            <div class="col s12 l5">
+                <h2 class="indigo-text text-darken-4">Get In Touch...</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra massa massa ultricies mi quis.</p>
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <form action="">
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email"id="email">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea id="message" class="materialize-textarea"></textarea>
+                        <label for="message">Your message</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="date" class="datepicker">
+                        <label for="date">Preferred date for initial consultation</label>
+                    </div>
+                    <div class="input-field">
+                        <p>Services Required...</p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>Personal Diet coaching</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>Personal Training</span>
+                            </label>
+                        </p>
+                    </div>
+                    <div class="input-field right">
+                        <button class="btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>About me</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh praesent tristique magna sit amet purus gravida.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh praesent tristique magna sit amet purus gravida.</p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h5>Connect with us</h5><p></p>
+                    <ul>
+                        <li>
+                            <a href="#" class="tooltipped btn-floating btn-small grey darken-4" data-tooltip="Connect with us on Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="grey-text text-lighten-3">Facebook</a><p></p>
+                        </li> 
+                        <li> 
+                            <a href="#" class="tooltipped btn-floating btn-small grey darken-4" data-tooltip="Connect with us on Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="grey-text text-lighten-3">Twitter</a><p></p>
+                        </li>
+                        <li>
+                            <a href="" class="tooltipped btn-floating btn-small grey darken-4" data-tooltip="Connect with us on Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="grey-text text-lighten-3">Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+            <div class="container center-align">&copy; 2019 Pocket Health</div>
+        </div>
+    </footer>
 
     <div class="container">
         <h4>Grids</h4>
@@ -266,6 +388,12 @@
             $('.sidenav').sidenav();
             $('.modal').modal();
             $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+                disableWeekends: true,
+            });
+            $('.tooltipped').tooltip();
         });
     </script>
 </body>
