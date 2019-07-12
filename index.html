@@ -31,6 +31,9 @@
             top: 20px;
             right: 20px;
         }
+        .section{
+            padding-top: 4vw;
+        }
     </style>
 </head>
 <body>
@@ -66,28 +69,28 @@
     <section class="container section" id="photos">
         <div class="row">
             <div class="col s12 l4">
-                <img src="img/strength.jpg" alt=""class="responsive-img"/>
+                <img src="img/strength.jpg" alt=""class="responsive-img materialboxed"/>
             </div>
-            <div class="col s12 l6">
-                <h2 class="indigo-text text-darken-4">Strength Training Tips</h2>
+            <div class="col s12 l6 offset-l1">
+                <h3 class="indigo-text text-darken-4">Strength Training Tips</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/cardio.jpg" alt=""class="responsive-img materialboxed"/>
+            </div>
+            <div class="col s12 l6 pull-l5 right-align offset-l1">
+                <h3 class="indigo-text text-darken-4">Cardio Advice</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
         </div>
         <div class="row">
             <div class="col s12 l4">
-                <img src="img/cardio.jpg" alt=""class="responsive-img"/>
+                <img src="img/healthy-eating.jpg" alt=""class="responsive-img materialboxed"/>
             </div>
-            <div class="col s12 l6">
-                <h2 class="indigo-text text-darken-4">Cardio Advice</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s12 l4">
-                <img src="img/healthy-eating.jpg" alt=""class="responsive-img"/>
-            </div>
-            <div class="col s12 l6">
-                <h2 class="indigo-text text-darken-4">Meal and Diet Planning</h2>
+            <div class="col s12 l6 offset-l1">
+                <h3 class="indigo-text text-darken-4">Meal and Diet Planning</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
         </div>
@@ -262,6 +265,7 @@
         $(document).ready(function(){
             $('.sidenav').sidenav();
             $('.modal').modal();
+            $('.materialboxed').materialbox();
         });
     </script>
 </body>
