@@ -28,12 +28,19 @@
         .box {
             height: 200px;
         }
+        nav {
+            position:fixed;
+            z-index: 5;
+            background: rgba(0, 0, 0, 0.2);
+            padding:0px 20px;
+        }
         nav .badge{
             position: relative;
             top: 20px;
             right: 20px;
         }
         .section{
+            background-size: cover;
             padding-top: 4vw;
         }
         .tabs .indicator{
@@ -205,6 +212,7 @@
                         <label for="message">Your message</label>
                     </div>
                     <div class="input-field">
+                            <i class="material-icons prefix">calendar_today</i>
                         <input type="text" id="date" class="datepicker">
                         <label for="date">Preferred date for initial consultation</label>
                     </div>
@@ -239,7 +247,7 @@
                     <li class="collection-item avatar">
                         <i class="material-icons circle blue">person</i>
                         <span class="title">Michael Dunwoody</span>
-                        <p class="grey-text">Kung Fu Master</p>
+                        <p class="grey-text">Owner</p>
                             <a href="#" class="secondary-content">
                                 <i class="material-icons blue-text">email</i>
                             </a>
@@ -247,15 +255,15 @@
                     <li class="collection-item avatar">
                         <i class="material-icons circle blue">person</i>
                         <span class="title">Chloe Ireland</span>
-                        <p class="grey-text">Xiaolin Monk</p>
+                        <p class="grey-text">Personal Trainer</p>
                             <a href="#" class="secondary-content">
                                 <i class="material-icons blue-text">email</i>
                             </a>
                     </li>
                     <li class="collection-item avatar">
                         <i class="material-icons circle blue">person</i>
-                        <span class="title">Third Guy</span>
-                        <p class="grey-text">Unqualified</p>
+                        <span class="title">Cameron Hamilton</span>
+                        <p class="grey-text">Nutritionist</p>
                             <a href="#" class="secondary-content">
                                 <i class="material-icons blue-text">email</i>
                             </a>
@@ -263,7 +271,7 @@
                     <li class="collection-item avatar">
                         <i class="material-icons circle blue">person</i>
                         <span class="title">Michael Culbert</span>
-                        <p class="grey-text">Fast Castler</p>
+                        <p class="grey-text">Personal Trainer</p>
                             <a href="#" class="secondary-content">
                                 <i class="material-icons blue-text">email</i>
                             </a>
@@ -271,7 +279,15 @@
                     <li class="collection-item avatar">
                         <i class="material-icons circle blue">person</i>
                         <span class="title">Anna McErlean</span>
-                        <p class="grey-text">Sports</p>
+                        <p class="grey-text">Nutritionist</p>
+                            <a href="#" class="secondary-content">
+                                <i class="material-icons blue-text">email</i>
+                            </a>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="material-icons circle blue">person</i>
+                        <span class="title">Olivia French</span>
+                        <p class="grey-text">Personal Trainer</p>
                             <a href="#" class="secondary-content">
                                 <i class="material-icons blue-text">email</i>
                             </a>
@@ -333,6 +349,18 @@
             $('.tooltipped').tooltip();
             $('.scrollspy').scrollSpy();
             $('.parallax').parallax();
+            $(window).scroll(function(){
+                if($(window).scrollTop()>600){
+                    $('nav').removeClass('transparent');
+                    $('nav').addClass('indigo');
+                    $('nav').addClass('darken-4');
+                }
+                else{
+                    $('nav').removeClass('indigo');
+                    $('nav').addClass('transparent');
+                    $('nav').addClass('darken-4');
+                }
+            });
         });
     </script>
 </body>
