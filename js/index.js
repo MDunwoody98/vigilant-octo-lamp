@@ -34,4 +34,8 @@ $(document).ready(function(){
         var toastHTML = '<span>Meal successfully added to favourites</span><button class="btn-flat toast-action">Undo</button>';
         M.toast({html: toastHTML,classes: 'indigo darken-4 rounded'});
     });
+    $('.moreDetails').click(function($e){
+        $e.preventDefault();
+        M.toast({html: 'Detail pop up',classes: 'indigo darken-4 rounded'});
+    })
 });

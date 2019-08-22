@@ -2,7 +2,7 @@ header{
     background: url(/img/athlete.png);
     background-size: cover;
     background-position: center;
-    min-height:1000px;
+    min-height:700px;
 }
 @media screen and (max-width:670px){
     header{
