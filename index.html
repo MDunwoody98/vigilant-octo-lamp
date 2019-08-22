@@ -13,43 +13,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"/>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <style>
-        header{
-            background: url(img/athlete.png);
-            background-size: cover;
-            background-position: center;
-            min-height:1000px;
-        }
-        @media screen and (max-width:670px){
-            header{
-                min-height: 500px;
-            }
-        }
-        .box {
-            height: 200px;
-        }
-        nav {
-            position:fixed;
-            z-index: 5;
-            background: rgba(0, 0, 0, 0.2);
-            padding:0px 20px;
-        }
-        nav .badge{
-            position: relative;
-            top: 20px;
-            right: 20px;
-        }
-        .section{
-            background-size: cover;
-            padding-top: 4vw;
-        }
-        .tabs .indicator{
-            background-color:navy;
-        }
-        .tabs .tab a:focus, .tabs .tab a:focus.active{
-            background: ghostwhite;
-        }
-    </style>
+    <!--Import styles.css-->
+    <link type="text/css" rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
     <header>
@@ -75,7 +40,7 @@
             </div>
         </nav>
         <ul class="sidenav" id="mobile-links">
-            <li><a href="#">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#photos">Photos</a></li>
             <li><a href="#offerings">What we Offer</a></li>
             <li><a href="#cards">Recipes</a></li><!--Make this a carousel of meal planning!-->
@@ -156,14 +121,14 @@
                     <div class="col s12 l6">
                         <div class="card">
                             <div class="card-image">
-                                <img src="img/fish.png" alt=""/>
+                                <img src="img/blueberry banana walnut porridge.jpg" alt=""/>
                                 <a href="#" class="halfway-fab btn-floating pink pulse">
                                     <i class="material-icons">favorite</i>
                                 </a>
                             </div>
                             <div class="card-content">
-                                <div class="card-title">Lemon Fish and Chips</div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae tortor condimentum lacinia quis. At imperdiet dui accumsan sit amet nulla facilisi morbi.</p>
+                                <div class="card-title">Banana, Blueberry and Walnut Porridge</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae tortor condimentum lacinia quis. Tellus mauris a diam maecenas sed enim.</p>
                                 <div class="card-action">
                                     <a href="#">More details</a>
                                     <a href="#">View ingredients</a>
@@ -174,17 +139,17 @@
                     <div class="col s12 l6">
                         <div class="card">
                             <div class="card-image">
-                                <img src="img/curry.jpg" alt=""/>
+                                <img src="img/fish.jpg" alt=""/>
                                 <a href="#" class="halfway-fab btn-floating pink pulse">
                                     <i class="material-icons">favorite</i>
                                 </a>
                             </div>
                             <div class="card-content">
-                                <div class="card-title">Mango and chickpea curry</div>
+                                <div class="card-title">Low Fat Fish and Chips</div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Imperdiet dui accumsan sit amet. Mollis nunc sed id semper risus. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin.</p>
                                 <div class="card-action">
                                     <a href="#">More details</a>
-                                    <a href="#">View ingredients</a>
+                                    <a href="#">View nutriti</a>
                                 </div>
                             </div>
                         </div>
@@ -248,7 +213,7 @@
                         <i class="material-icons circle blue">person</i>
                         <span class="title">Michael Dunwoody</span>
                         <p class="grey-text">Owner</p>
-                            <a href="#" class="secondary-content">
+                            <a href="#" class="secondary-content emailIcon">
                                 <i class="material-icons blue-text">email</i>
                             </a>
                     </li>
@@ -256,7 +221,7 @@
                         <i class="material-icons circle blue">person</i>
                         <span class="title">Chloe Ireland</span>
                         <p class="grey-text">Personal Trainer</p>
-                            <a href="#" class="secondary-content">
+                            <a href="#" class="secondary-content emailIcon">
                                 <i class="material-icons blue-text">email</i>
                             </a>
                     </li>
@@ -264,7 +229,7 @@
                         <i class="material-icons circle blue">person</i>
                         <span class="title">Cameron Hamilton</span>
                         <p class="grey-text">Nutritionist</p>
-                            <a href="#" class="secondary-content">
+                            <a href="#" class="secondary-content emailIcon">
                                 <i class="material-icons blue-text">email</i>
                             </a>
                     </li>
@@ -272,7 +237,7 @@
                         <i class="material-icons circle blue">person</i>
                         <span class="title">Michael Culbert</span>
                         <p class="grey-text">Personal Trainer</p>
-                            <a href="#" class="secondary-content">
+                            <a href="#" class="secondary-content emailIcon">
                                 <i class="material-icons blue-text">email</i>
                             </a>
                     </li>
@@ -280,7 +245,7 @@
                         <i class="material-icons circle blue">person</i>
                         <span class="title">Anna McErlean</span>
                         <p class="grey-text">Nutritionist</p>
-                            <a href="#" class="secondary-content">
+                            <a href="#" class="secondary-content emailIcon">
                                 <i class="material-icons blue-text">email</i>
                             </a>
                     </li>
@@ -288,7 +253,7 @@
                         <i class="material-icons circle blue">person</i>
                         <span class="title">Olivia French</span>
                         <p class="grey-text">Personal Trainer</p>
-                            <a id="abc" href="" class="secondary-content">
+                            <a href="#" class="secondary-content emailIcon">
                                 <i class="material-icons blue-text" >email</i>
                             </a>
                     </li>
@@ -334,34 +299,9 @@
             <div class="container center-align">&copy; 2019 Pocket Health</div>
         </div>
     </footer>
-
+    <!--Javascript declarations-->
     <script type="text/javascript" src = "js/jquery.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.sidenav').sidenav();
-            $('.modal').modal();
-            $('.materialboxed').materialbox();
-            $('.tabs').tabs();
-            $('.datepicker').datepicker({
-                disableWeekends: true,
-            });
-            $('.tooltipped').tooltip();
-            $('.scrollspy').scrollSpy();
-            $('.parallax').parallax();
-            $(window).scroll(function(){
-                if($(window).scrollTop()>600){
-                    $('nav').removeClass('transparent');
-                    $('nav').addClass('indigo');
-                    $('nav').addClass('darken-4');
-                }
-                else{
-                    $('nav').removeClass('indigo');
-                    $('nav').addClass('transparent');
-                    $('nav').addClass('darken-4');
-                }
-            });
-        });
-    </script>
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
