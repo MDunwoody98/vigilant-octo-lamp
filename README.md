@@ -1,1 +1,1 @@
-# MDunwoody98.github.io
+Materialize CSS for HCI Module. Dynamically scales for mobile viewing
